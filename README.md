@@ -2,8 +2,8 @@
 <p>Dibuat oleh viko, maaf masi noob. dan terima kasih sama bebeb <a href="https://github.com/arugaZ/">ArugaZ</a> telah memberikan ilmu</p>
 
 
-<h3>INSTALASI</h3>
-```bash
+##INSTALASI
+```
 > cd bmkg-scraper-api
 > npm i
 > node index

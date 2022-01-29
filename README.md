@@ -3,7 +3,7 @@
 
 
 ##INSTALASI
-```
+```bash
 > cd bmkg-scraper-api
 > npm i
 > node index

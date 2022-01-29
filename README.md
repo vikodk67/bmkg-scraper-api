@@ -4,9 +4,9 @@
 
 <h3>INSTALASI</h3>
 ```bash
-cd bmkg-scraper-api
-npm i
-node index
+> cd bmkg-scraper-api
+> npm i
+> node index
 ```
 
 <p>OUTPUT</p>

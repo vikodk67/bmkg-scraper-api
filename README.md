@@ -10,14 +10,14 @@
 ```
 
 <p>OUTPUT</p>
-```bash
-> [
->  {"tanggal":"28 Januari 2022, 18:20:36 WIB","kekuatan":"5.2","kedalaman":"10 km",
->  "kordinat":"12.14 LS - 112.86 BT",
->  "alamat":"445 km Tenggara KAB-MALANG-JATIM",
->  "datanya":
->      {"potensi":"tidak berpotensi TSUNAMI", 
->       "tumb":"Fix in sendiri scrapernya perbagus lagi"
->  }}
-> ]
+``` ts
+[
+ {"tanggal":"28 Januari 2022, 18:20:36 WIB","kekuatan":"5.2","kedalaman":"10 km",
+ "kordinat":"12.14 LS - 112.86 BT",
+ "alamat":"445 km Tenggara KAB-MALANG-JATIM",
+ "datanya":
+     {"potensi":"tidak berpotensi TSUNAMI", 
+      "tumb":"Fix in sendiri scrapernya perbagus lagi"
+      }}
+ ]
 ```

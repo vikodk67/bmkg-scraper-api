@@ -21,3 +21,35 @@
       }}
  ]
 ```
+
+``` ts
+type SocketConfig = {
+    /** provide an auth state object to maintain the auth state */
+    auth?: AuthenticationState
+    /** the WS url to connect to WA */
+    waWebSocketUrl: string | URL 
+    /** Fails the connection if the connection times out in this time interval or no data is received */
+	connectTimeoutMs: number
+    /** Default timeout for queries, undefined for no timeout */
+    defaultQueryTimeoutMs: number | undefined
+    /** ping-pong interval for WS connection */
+    keepAliveIntervalMs: number
+    /** proxy agent */
+	agent?: Agent
+    /** pino logger */
+	logger: Logger
+    /** version to connect with */
+    version: WAVersion
+    /** override browser config */
+	browser: WABrowserDescription
+	/** agent used for fetch requests -- uploading/downloading media */
+	fetchAgent?: Agent
+    /** should the QR be printed in the terminal */
+    printQRInTerminal: boolean
+    /** 
+     * fetch a message from your store 
+     * implement this so that messages failed to send (solves the "this message can take a while" issue) can be retried
+     * */
+    getMessage: (key: proto.IMessageKey) => Promise<proto.IMessage | undefined>
+}
+```

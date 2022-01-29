@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["bmkg-api", "bmkg-scrap", "bmkg gempa terkini", "rest api gempa"],
   "author": "Viko dwi kurniawan",
   "license": "ISC",
   "dependencies": {

@@ -32,11 +32,6 @@ axios.get('https://www.bmkg.go.id/')
 		app.listen(port, () => {
         console.log(`BMKG API runing on port ${port}`)
         })
-		console.log(articles)
-		// file tempnya
-        fs.writeFile('./data/temp.json', JSON.stringify(articles), (error) => {
-            if (error) throw error;
-        })
     })
     .catch((error) => {
         console.log(error);

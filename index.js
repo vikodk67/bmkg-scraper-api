@@ -5,6 +5,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+
 axios.get('https://www.bmkg.go.id/')
     .then((response) => {
         let $ = cheerio.load(response.data);
@@ -19,7 +20,7 @@ axios.get('https://www.bmkg.go.id/')
 				alamat: $(element).find('div div div.col-md-4.md-margin-bottom-10 div.gempabumi-home-bg.margin-top-13 div div.col-md-6.col-xs-6.gempabumi-detail.no-padding ul li:nth-child(5)').text().trim(),
 				datanya: { 
 				    potensi: $(element).find('div div div.col-md-4.md-margin-bottom-10 div.gempabumi-home-bg.margin-top-13 div div.col-md-6.col-xs-6.gempabumi-detail.no-padding ul li:nth-child(6)').text().trim(),
-				    tumb: $(element).find('div div div.col-md-4.md-margin-bottom-10 div.gempabumi-home-bg.margin-top-13 div div:nth-child(1) a img').text(),
+				    tumb: $(element).find('div div div.col-md-4.md-margin-bottom-10 div.gempabumi-home-bg.margin-top-13 div div:nth-child(1) a img').attr('src'),
 				    }
 			});
         });
